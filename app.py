@@ -43,7 +43,7 @@ BENIGN_SAMPLE = ds.data[ds.target == 1].iloc[0].to_dict()
 MALIGNANT_SAMPLE = ds.data[ds.target == 0].iloc[0].to_dict()
 
 
-# ------------------------------------------------------------------ helpers
+# Helpers
 def predict_df(df: pd.DataFrame) -> pd.DataFrame:
     """DataFrame (30 feature columns) -> prediction + confidence columns."""
     X = df[features].astype(float)
